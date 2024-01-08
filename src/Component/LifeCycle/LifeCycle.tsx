@@ -8,6 +8,9 @@ function LifeCycle() {
   return (
     <div>
       <div>{count}</div>
+
+
+      
       <button onClick={()=> setCount(count + 1)}>click</button>
     </div>
   )
