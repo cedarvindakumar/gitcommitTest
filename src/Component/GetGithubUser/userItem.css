@@ -1,0 +1,77 @@
+.userListing {
+    width: 960px;
+    padding: 20px;
+    border: 1px solid #e4e4e4;
+    margin: 0px auto;
+    margin-top: 58px;
+}
+.search-wrapper {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+}
+.search-wrapper input {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #e4e4e4;
+    padding: 10px;
+}
+.userListing-wrapper {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    max-width: 880px;
+    margin: 0px auto;
+    /* margin-left: -16px; */
+    /* margin-right: -16px; */
+}
+.userItem {
+    width: 400px;
+    border: 1px solid #e4e4e4;
+    padding: 12px;
+    border-radius: 5px;
+    flex: 0 0 49%;
+    background: #f3f3f3;
+}
+.details--wrapper {
+    display: flex;
+    align-items: start;
+    gap: 12px;
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 12px;
+}
+.image-wrapper {
+    width: 55px;
+}
+.image-wrapper img {
+    width: 100%;
+    border: 1px solid #e4e4e4;
+    padding: 5px;
+    border-radius: 5px;
+}
+.userDetails {
+    text-align: left;
+    flex-direction: column;
+    gap: 4px;
+    display: flex;
+}
+.detail-item {
+    color: #b39a9a;
+    font-size: 14px;
+}
+.detail-item label {
+    color: #000;
+    font-size: 14px;
+    margin-right: 6px;
+}
+.email-details {
+    display: flex;
+    padding-top: 12px;
+}
+.email-details > span {
+    flex: 1 1 auto;
+    font-size: 14px;
+}
+.email-details > span:first-child {
+    border-right: 1px solid #e4e4e4;
+}
