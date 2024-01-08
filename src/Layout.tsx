@@ -36,6 +36,9 @@ const Layout = () => {
                         <li>
                             <Link to="/useref">Use ref</Link>
                         </li>
+                        <li>
+                            <Link to="/gitCommit">Git commit</Link>
+                        </li>
 
                     </ul>
                 </nav>

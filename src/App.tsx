@@ -19,6 +19,7 @@ import SearchApi from './Component/SearchApi/SearchApi';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Component/Home';
 import Layout from './Layout';
+import GitCommit from './Component/GitCommit/GitCommit';
 
 
 
@@ -39,6 +40,7 @@ function App() {
               <Route path="todilist" element={<TodoList />} />
               <Route path="githuuser" element={<GetGithubUser />} />
               <Route path="useref" element={<UseRef />} />
+              <Route path="gitCommit" element={<GitCommit />} />
               
             </Route>
           </Routes>
