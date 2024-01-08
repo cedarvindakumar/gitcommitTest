@@ -48,6 +48,7 @@ interface GitHubCommit {
       message: string;
     };
   }
+  
 const GitCommit = () => {
     const [commits, setCommits] = useState<GitHubCommit[]>([]);
     const repoOwner = "cedarvindakumar";
