@@ -25,6 +25,7 @@ import GitCommit from './Component/GitCommit/GitCommit';
 
 function App() {
   // comment added
+  // second comment added
   return (
     <Provider store={store}>
       <div className="App">
