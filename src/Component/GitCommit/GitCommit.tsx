@@ -41,14 +41,19 @@ import axios from 'axios';
 
 interface GitHubCommit {
     sha: string;
+    html_url: string;
     commit: {
       author: {
         name: string;
+        date: string;
       };
       message: string;
     };
+    committer: {
+        id: number;
+    }
   }
-  
+
 const GitCommit = () => {
     const [commits, setCommits] = useState<GitHubCommit[]>([]);
     const repoOwner = "cedarvindakumar";
@@ -69,7 +74,7 @@ const GitCommit = () => {
         fetchCommits();
     }, [repoOwner, repoName]);
 
-    // console.log(commits, 'fffffffff');
+    console.log(commits, 'fffffffff');
 
     return (
         <div>
@@ -84,6 +89,8 @@ const GitCommit = () => {
                             }
                         </>
                         <strong>{commitss.commit.author.name}</strong>: {commitss.commit.message}
+                        <p>{commitss.commit.author.date}</p>
+                        <a href={commitss.html_url} target='_blank'>#{commitss.committer.id}</a>
                     </li>
                 ))}
             </ul>
